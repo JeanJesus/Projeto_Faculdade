@@ -1,4 +1,6 @@
-<?php include_once('back_end/verifica_login.php'); ?>
+<?php include_once('back_end/verifica_login.php');
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,8 +11,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 
-    <title>SB Admin - Dashboard</title>
+    <title>Advocacia - Sys</title>
 
     <!-- Bootstrap core CSS-->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -27,7 +30,6 @@
   </head>
 
   <body id="page-top">
-
     <nav class="navbar navbar-expand navbar-dark bg-dark static-top">
 
       <a class="navbar-brand mr-1" href="inicial.php">Start Bootstrap</a>
@@ -76,7 +78,7 @@
         </li>
         <li class="nav-item dropdown no-arrow">
           <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <i class="fas fa-user-circle fa-fw"></i>
+            <i class="fas fa-user-circle fa-fw"></i> <b class="hello_user">Olá, Jean!</b>
           </a>
           <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
             <a class="dropdown-item" href="#">Settings</a>

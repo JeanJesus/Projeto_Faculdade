@@ -12,8 +12,11 @@
 
     $Email = pg_escape_string ($conn, $_POST['email']); //pg_scape_string ajuda a proteger contra ataques de sql injectors//
     $Senha = pg_escape_string($conn ,$_POST['senha']);
+    $user_name;
 
     $query_login = "select email, senha from login where email='{$Email}' and senha = md5('$Senha')";
+    
+
 
     $resultado = pg_query($conn, $query_login);
 
