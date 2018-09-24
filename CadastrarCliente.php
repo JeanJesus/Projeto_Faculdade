@@ -147,6 +147,11 @@
           </div><br />
 
 
+
+<div class="TODOFORM">
+
+
+
                 <!-- iniciando formulario de cadastro -->
                 <form class="form-horizontal">
 <fieldset>
@@ -180,6 +185,7 @@
 </div>
 
 <!-- Text input-->
+
 <div class="form-group">
   <label class="col-md-2 control-label" for="Nome">CPF <h11>*</h11></label>
   <div class="col-md-2">
@@ -366,23 +372,7 @@
 
 </div>
 
-<div class="form-group">
 
-  <label class="col-md-2 control-label" for="selectbasic">Escolaridade <h11>*</h11></label>
-
-  <div class="col-md-3">
-    <select required id="escolaridade" name="escolaridade" class="form-control">
-    <option value=""></option>
-      <option value="Analfabeto">Analfabeto</option>
-      <option value="Fundamental Incompleto">Fundamental Incompleto</option>
-      <option value="Fundamental Completo">Fundamental Completo</option>
-      <option value="Médio Incompleto">Médio Incompleto</option>
-      <option value="Médio Completo">Médio Completo</option>
-      <option value="Superior Incompleto">Superior Incompleto</option>
-      <option value="Superior Completo">Superior Completo</option>
-    </select>
-  </div>
-</div>
 <!-- Text input-->
 
 
@@ -405,7 +395,7 @@
 </fieldset>
 </form>
 
-
+</div>
                 <!-- fim do formulario de cadastro -->
 
 
