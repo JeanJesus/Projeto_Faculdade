@@ -30,7 +30,7 @@
 
     <nav class="navbar navbar-expand navbar-dark bg-dark static-top">
 
-      <a class="navbar-brand mr-1" href="index.php">Start Bootstrap</a>
+      <a class="navbar-brand mr-1" href="inicial.php">Início</a>
 
       <button class="btn btn-link btn-sm text-white order-1 order-sm-0" id="sidebarToggle" href="#">
         <i class="fas fa-bars"></i>
@@ -94,7 +94,7 @@
       <!-- Sidebar -->
       <ul class="sidebar navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" href="index.php">
+          <a class="nav-link" href="inicial.php">
             <i class="fas fa-fw fa-tachometer-alt"></i>
             <span>Dashboard</span>
           </a>
@@ -111,7 +111,7 @@
             <a class="dropdown-item" href="forgot-password.php">Forgot Password</a>
             <div class="dropdown-divider"></div>
             <h6 class="dropdown-header">Other Pages:</h6>
-            <a class="dropdown-item active" href="404.php">404 Page</a>
+            <a class="dropdown-item active" href="CadastrarCliente.php">Clientes</a>
             <a class="dropdown-item" href="blank.php">Blank Page</a>
           </div>
         </li>
@@ -134,17 +134,86 @@
           <!-- Breadcrumbs-->
           <ol class="breadcrumb">
             <li class="breadcrumb-item">
-              <a href="index.php">Dashboard</a>
+              <a href="inicial.php">Pagina Inicial</a>
             </li>
-            <li class="breadcrumb-item active">404 Error</li>
+            <li class="breadcrumb-item active">Cadastro de Clientes</li>
           </ol>
+          <div align="center">
+            <img src="img/Logo.png" width="130px" height="100px">
+          </div><br />
 
-          <!-- Page Content -->
-          <h1 class="display-1">404</h1>
-          <p class="lead">Page not found. You can
-            <a href="javascript:history.back()">go back</a>
-            to the previous page, or
-            <a href="index.php">return home</a>.</p>
+          <div class="container">
+            <div class="card card-login mx-auto mt-5">
+              <div class="card-header">Cadastro</div>
+              <div class="card-body">
+
+
+                <form method="POST" action="back_end/val_login.php">
+                  <div class="form-group">
+                    <div class="form-label-group">
+                      <b>Nome Completo:</b>
+                      <input type="text" id="entr" class="form-control"   placeholder="nome completo" name="nome_cliente">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="form-label-group">
+                      <b>Data de Nascimento:</b>
+                      <input type="date" id="entr" class="form-control"   name="data_nascimento">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="form-label-group">
+                      <b>CPF:</b>
+                      <input type="CPF" id="entr" class="form-control"   autofocus="autofocus" name="cpf" maxlength="14">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="form-label-group">
+                      <b>RG:</b>
+                      <input type="email" id="entr" class="form-control"   name="rg" maxlength="10">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="form-label-group">
+                      <b>Gênero:</b>
+                      <input type="Select" id="inputEmail" class="form-control"   autofocus="autofocus" name="nome_cliente">
+                    </div>
+                  </div>
+
+
+
+                  <div align="center">
+                    <input type="submit" class="btn btn-primary">
+                  </div>
+                </form>
+
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         </div>
         <!-- /.container-fluid -->
@@ -153,7 +222,7 @@
         <footer class="sticky-footer">
           <div class="container my-auto">
             <div class="copyright text-center my-auto">
-              <span>Copyright © Your Website 2018</span>
+              <span>Copyright © Adivocacia  2018</span>
             </div>
           </div>
         </footer>
@@ -182,7 +251,7 @@
           <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
           <div class="modal-footer">
             <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-            <a class="btn btn-primary" href="index.php">Logout</a>
+            <a class="btn btn-primary" href="back_end/logout.php">Logout</a>
           </div>
         </div>
       </div>
