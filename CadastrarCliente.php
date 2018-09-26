@@ -1,196 +1,46 @@
-<?php include_once('back_end/verifica_login.php');?> <!--Faz a verificação da existencia do login do usuário -->
-<?php include_once('js/script_menu.php');?>   <!-- Importa os arquivos para o funcionamento dos menus -->
+<div id="content-wrapper">
 
-
-<!DOCTYPE html>
-<html lang="en">
-
-  <head>
-    <script type="text/javascript" src="js/cadastro_script.js"> </script>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-
-    <title>Cadastro de Clientes</title>
-
-    <!-- Bootstrap core CSS-->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom fonts for this template-->
-    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-
-    <!-- Page level plugin CSS-->
-    <link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
-
-    <!-- Custom styles for this template-->
-    <link href="css/sb-admin.css" rel="stylesheet">
-
-  </head>
-
-  <body id="page-top">
-    <nav class="navbar navbar-expand navbar-dark bg-dark static-top">
-
-      <a class="navbar-brand mr-1" href="inicial.php">Início</a>
-
-      <button class="btn btn-link btn-sm text-white order-1 order-sm-0" id="sidebarToggle" href="#">
-        <i class="fas fa-bars"></i>
-      </button>
-
-      <!-- Navbar Search -->
-      <form class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">
-        <div class="input-group">
-          <input type="text" class="form-control" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
-          <div class="input-group-append">
-            <button class="btn btn-primary" type="button">
-              <i class="fas fa-search"></i>
-            </button>
-          </div>
-        </div>
-      </form>
-
-      <!-- Navbar -->
-      <ul class="navbar-nav ml-auto ml-md-0">
-        <li class="nav-item dropdown no-arrow mx-1">
-          <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <i class="fas fa-bell fa-fw"></i>
-            <span class="badge badge-danger">9+</span>
-          </a>
-          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="alertsDropdown">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Something else here</a>
-          </div>
-        </li>
-        <li class="nav-item dropdown no-arrow mx-1">
-          <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <i class="fas fa-envelope fa-fw"></i>
-            <span class="badge badge-danger">7</span>
-          </a>
-          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="messagesDropdown">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Something else here</a>
-          </div>
-        </li>
-        <li class="nav-item dropdown no-arrow">
-          <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <i class="fas fa-user-circle fa-fw"></i> <b class="hello_user">Olá, Jean!</b>
-          </a>
-          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
-            <a class="dropdown-item" href="#">Settings</a>
-            <a class="dropdown-item" href="#">Activity Log</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="back_end/logout.php" data-toggle="modal" data-target="#logoutModal">Logout</a>
-          </div>
-        </li>
-      </ul>
-
-    </nav>
-
-    <div id="wrapper">
-
-      <!-- Sidebar -->
-      <ul class="sidebar navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link" href="inicial.php">
-            <i class="fas fa-fw fa-tachometer-alt"></i>
-            <span>Dashboard</span>
-          </a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <i class="fas fa-fw fa-folder"></i>
-            <span>Cadastrar</span>
-          </a>
-          <div class="dropdown-menu" aria-labelledby="pagesDropdown">
-            <h6 class="dropdown-header">Login Screens:</h6>
-            <a class="dropdown-item" href="CadastrarCliente.php">Clientes</a>
-            <a class="dropdown-item" href="blank.php">Blank Page</a>
-            <div class="dropdown-divider"></div>
-            <h6 class="dropdown-header">Other Pages:</h6>
-
-            <a class="dropdown-item" href="index.php">Login</a>
-            <a class="dropdown-item" href="register.php">Register</a>
-            <a class="dropdown-item" href="forgot-password.php">Forgot Password</a>
-          </div>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="charts.php">
-            <i class="fas fa-fw fa-chart-area"></i>
-            <span>Charts</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="tables.php">
-            <i class="fas fa-fw fa-table"></i>
-            <span>Tables</span></a>
-        </li>
-      </ul>
-
-      <div id="content-wrapper">
-
-        <div class="container-fluid">
-
-          <!-- Breadcrumbs-->
-          <ol class="breadcrumb">
-            <li class="breadcrumb-item">
-              <a href="inicial.php">Pagina Inicial</a>
-            </li>
-            <li class="breadcrumb-item active">Cadastro de Clientes</li>
-          </ol>
-          <div align="center">
-            <img src="img/Logo.png" width="130px" height="100px">
+    <div class="container-fluid">
+      <div align="center">
+        <img src="img/Logo.png" width="130px" height="100px">
           </div><br />
 
 
-          <!-- iniciando formulario de cadastro -->
-            <form class="form-horizontal">
-              <fieldset>
-              <div class="panel panel-primary">
-                  <div class="panel-heading">Cadastro de Cliente</div>
+      <!-- iniciando formulario de cadastro -->
+        <form class="form-horizontal">
+          <fieldset>
+            <div class="panel panel-primary">
+                <div class="panel-body">
 
-                  <div class="panel-body">
-              <div class="form-group">
-              <!--
-              <div class="form-group">
-              <div class="col-md-4 control-label">
-                  <img id="logo" src="http://blogdoporao.com.br/wp-content/uploads/2016/12/Faculdade-pitagoras.png"/>
+          <!-- Text input-->
+            <div class="form-group">
+              <label class="col-md-2 control-label" for="Nome">Nome <h11>*</h11></label>
+              <div class="col-md-8">
+              <input id="Nome" name="Nome" placeholder="" class="form-control input-md" required="" type="text">
               </div>
-              <div class="col-md-4 control-label">
-                  <h1>Cadastro de Cliente</h1>
-
-              </div>
-              </div>
-                  -->
-              <div class="col-md-11 control-label">
-                      <p class="help-block"><h11>*</h11> Campo Obrigatório </p>
-              </div>
-              </div>
-
-              <!-- Text input-->
-              <div class="form-group">
-                <label class="col-md-2 control-label" for="Nome">Nome <h11>*</h11></label>
-                <div class="col-md-8">
-                <input id="Nome" name="Nome" placeholder="" class="form-control input-md" required="" type="text">
-                </div>
-              </div>
+            </div>
 
               <!-- Text input-->
 
-              <div class="form-group">
-                <label class="col-md-2 control-label" for="Nome">CPF <h11>*</h11></label>
-                <div class="col-md-2">
-                <input id="cpf" name="cpf" placeholder="Apenas números" class="form-control input-md" required="" type="text" maxlength="11" pattern="[0-9]+$">
-                </div>
+          <div class="form-group">
+            <label class="col-md-2 control-label" for="Nome">CPF <h11>*</h11></label>
+            <div class="col-md-4">
+            <input id="cpf" name="cpf" placeholder="Apenas números" class="form-control input-md" required="" type="text" maxlength="11" pattern="[0-9]+$">
+          </div>
 
-                <label class="col-md-1 control-label" for="Nome">Nascimento<h11>*</h11></label>
-                <div class="col-md-2">
-                <input id="dtnasc" name="dtnasc" placeholder="DD/MM/AAAA" class="form-control input-md" required="" type="text" maxlength="10" OnKeyPress="formatar('##/##/####', this)" onBlur="showhide()">
-              </div>
+          <div class="form-group">
+            <label class="col-md-2 control-label" for="Nome">RG <h11>*</h11></label>
+            <div class="col-md-4">
+            <input id="cpf" name="rg" placeholder="Apenas números" class="form-control input-md" required="" type="text" maxlength="11" pattern="[0-9]+$">
+          </div>
+
+
+
+
+            <label class="col-md-1 control-label" for="Nome">Nascimento<h11>*</h11></label>
+              <div class="col-md-2">
+              <input id="dtnasc" name="dtnasc" placeholder="DD/MM/AAAA" class="form-control input-md" required="" type="text" maxlength="10" OnKeyPress="formatar('##/##/####', this)" onBlur="showhide()">
+            </div>
 
               <!-- Multiple Radios (inline) -->
 
@@ -328,11 +178,8 @@
                     <input id="filhos_qtd" name="filhos_qtd" class="form-control" type="text" placeholder="Quantos?" pattern="[0-9]+$" maxlength="2">
 
                   </div>
-
                 </div>
               </div>
-
-
               <!-- Select Basic -->
               <div class="form-group">
 
@@ -350,8 +197,6 @@
                     <option value="Superior Completo">Superior Completo</option>
                   </select>
                 </div>
-
-
               <!-- Text input-->
 
                 <label class="col-md-1 control-label" for="profissao">Profissão<h11>*</h11></label>
@@ -360,12 +205,7 @@
 
                 </div>
               </div>
-
-
-
               </div>
-
-
               </div>
 
               <!-- Button (Double) -->
@@ -385,9 +225,6 @@
 
               </div>
                               <!-- fim do formulario de cadastro -->
-
-
-
 
 
   </body>
