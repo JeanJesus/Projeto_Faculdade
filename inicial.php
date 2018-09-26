@@ -27,7 +27,7 @@
     <link href="css/sb-admin.css" rel="stylesheet">
 
   </head>
-  <title>Página Inicial</title>
+  <title>Advocacia</title>
 
   <body id="page-top">
 
