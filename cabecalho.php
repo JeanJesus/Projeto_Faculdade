@@ -79,7 +79,7 @@
         <span>Cadastrar</span>
       </a>
       <div class="dropdown-menu" aria-labelledby="pagesDropdown">
-        <h6 class="dropdown-header">Login Screens:</h6>
+        <h6 class="dropdown-header">Cadastrar:</h6> 
         <a class="dropdown-item" href="inicial.php?item=CadastrarCliente">Clientes</a>
         <a class="dropdown-item" href="inicial.php?item=CadastrarAdvogados">Advogados</a>
         <div class="dropdown-divider"></div>
@@ -105,18 +105,6 @@
   <div id="content-wrapper">
 
     <div class="container-fluid">
-
-      <!-- Breadcrumbs-->
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item">
-          <a href="inicial.php">Dashboard</a>
-        </li>
-        <li class="breadcrumb-item active">Overview</li>
-      </ol>
-
-
-
-
 
 <!-- Custom scripts for all pages-->
 <script src="js/sb-admin.min.js"></script>

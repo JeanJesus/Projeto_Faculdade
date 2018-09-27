@@ -44,55 +44,31 @@
       </div>
     </div>
 
-    <!-- _____________________________________________________________ -->
-
-  <!--  <div class="form-row">
-      <div class="form-group col-md-3">
-          <label for="inputEmail4">CEP:</label>
-          <div>
-          <input id="cep" name="cep" placeholder="Apenas números" class="form-control input-md" required="" value="" type="search" maxlength="8" pattern="[0-9]+$">
-        </div><br />
-       <div class="col-md-2">
-            <button type="button" class="btn btn-primary" onclick="pesquisacep(cep.value)">Pesquisar</button>
-        </div>
-
-      </div>
-      <div class="form-group col-md-5">
-        <span class="input-group-addon">Rua:&ensp; </span>
-        <input id="rua" name="rua" class="form-control" placeholder="" required="" readonly="readonly" type="text">
-      </div>
-
-      <div class="form-group col-md-3">
-        <span class="input-group-addon">Nº&ensp; <h11>*</h11></span>
-        <input id="numero" name="numero" class="form-control" placeholder="" required=""  type="text">
-      </div>
-
-      <div class="form-group col-md-3">
-        <span class="input-group-addon">Bairro:  &ensp;</span>
-        <input id="bairro" name="bairro" class="form-control" placeholder="" required="" readonly="readonly" type="text">
-      </div>
-    </div>
-
--->
 <!-- Search input-->
 <div class="form-row">
   <div class="form-group col-md-3">
     <label for="inputEmail4">CEP:</label>
     <div>
       <input id="cep" name="cep" placeholder="Apenas números" class="form-control input-md" required="" value="" type="search" maxlength="8" pattern="[0-9]+$">
-      <button type="button" class="btn btn-primary" onclick="pesquisacep(cep.value)">Pesquisar</button>
+    </div>
+  </div>
+
+  <div class="form-group col-md-2">
+    <label for="inputEmail4">&emsp;</label>
+    <div>
+     <button type="button" class="btn btn-primary" onclick="pesquisacep(cep.value)">Pesquisar</button>
     </div>
   </div>
 
 
-  <div class="form-group col-md-5">
+  <div class="form-group col-md-7">
     <label for="inputAddress">Endereço:</label>
     <input id="rua" name="rua" class="form-control" placeholder="" required="" readonly="readonly" type="text">
   </div>
 
 
 
-  <div class="form-group col-md-4">
+  <div class="form-group col-md-6">
     <label for="inputAddress">Bairro:</label>
     <input id="bairro" name="bairro" class="form-control" placeholder="" required="" readonly="readonly" type="text">
   </div>
@@ -114,7 +90,7 @@
     <label for="inputAddress">N°:</label>
     <input id="numero" name="numero" class="form-control" placeholder="" required=""  type="text">
   </div>
-  <div class="form-group col-md-3">
+  <div class="form-group col-md-9">
     <label for="inputAddress">Complemento:</label>
     <input id="numero" name="complemento" class="form-control" placeholder="" required=""  type="text">
   </div>
@@ -153,7 +129,7 @@
 
 
       <div class="form-group col-md-3">
-        <label for="inputPassword4">Telefone::</label>
+        <label for="inputPassword4">Telefone:</label>
         <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
         <input id="prependedtext" name="prependedtext" class="form-control" placeholder="XX XXXXX-XXXX" required="" type="text" maxlength="13" pattern="\[0-9]{2}\ [0-9]{4,6}-[0-9]{3,4}$"
         OnKeyPress="formatar('## #####-####', this)">
