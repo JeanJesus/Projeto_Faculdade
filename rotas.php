@@ -6,8 +6,8 @@ if($item =="CadastrarCliente"){
       include_once "inicial.php";
 }
 $item = $_GET['item'];
-if($item =="BlankPage"){
-    include_once ('blank.php');
+if($item =="CadastrarAdvogados"){
+    include_once ('CadastrarAdvogados.php');
     }else{
       include_once "inicial.php";
 }

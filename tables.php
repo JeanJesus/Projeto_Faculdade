@@ -110,7 +110,7 @@
           <div class="dropdown-menu" aria-labelledby="pagesDropdown">
             <h6 class="dropdown-header">Login Screens:</h6>
             <a class="dropdown-item" href="CadastrarCliente.php">Clientes</a>
-            <a class="dropdown-item" href="blank.php">Blank Page</a>
+            <a class="dropdown-item" href="CadastrarAdvogados.php">Blank Page</a>
             <div class="dropdown-divider"></div>
             <h6 class="dropdown-header">Other Pages:</h6>
 

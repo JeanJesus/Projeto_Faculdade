@@ -10,6 +10,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <script type="text/javascript" src="js/cadastro_script.js"></script>
 
 
@@ -33,6 +34,7 @@
 
     <?php include_once('cabecalho.php'); ?>
     <?php include_once('rotas.php'); ?>
+
 
 </body>
 
@@ -64,5 +66,6 @@
 </div>
 
 </body>
+
 
 </html>
